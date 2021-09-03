@@ -1,0 +1,32 @@
+{
+    "name": "storybook-vue-sandbox",
+    "version": "1.0.11",
+    "description": "Storybook for VueJS",
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "storybook": "start-storybook -p 6006 -s ./public",
+        "build-storybook": "build-storybook -s ./public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/klebersigrist/storybook-vue-sandbox"
+    },
+    "dependencies": {
+        "@babel/core": "^7.7.2",
+        "@storybook/addons": "^6.3.6",
+        "@storybook/core-events": "^6.3.6",
+        "@storybook/theming": "^6.3.6",
+        "@storybook/vue": "^6.3.6",
+        "babel-loader": "^8.0.6",
+        "babel-preset-vue": "^2.0.2",
+        "bootstrap": "^4.3.1",
+        "node-sass": "^4.13.0",
+        "sass-loader": "^8.0.0",
+        "vue": "^2.6.10",
+        "vue-loader": "^15.7.2",
+        "vue-template-compiler": "^2.6.10"
+    }
+}

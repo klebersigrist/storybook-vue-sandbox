@@ -1,0 +1,116 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+// Stories
+.story-page {
+  margin: 60px 0;
+
+  // Text
+  .story-text {
+    // Lead
+    &--lead {
+      padding: 3rem 0;
+      font-size: 1.5rem;
+    }
+
+    // Small
+    &--small {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    // Presentation
+    &--presentation {
+      font-size: 1.5rem;
+      margin: 3rem 0;
+    }
+  }
+
+  // Code
+  .story-snippets {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 60px 0 120px 0;
+    max-width: 100%;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    position: relative;
+
+    ::first-line {
+      white-space: nowrap;
+    }
+
+    &--highlight {
+      display: block;
+      position: absolute;
+      right: -1px;
+      bottom: -30px;
+      height: 30px;
+      text-align: right;
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      border-bottom-left-radius: 5px;
+      padding: 6px 10px 6px 20px;
+      font-size: 12px;
+      line-height: 12px;
+      border-top: transparent;
+    }
+  }
+
+  .story-alert {
+    background: #fff4f4;
+    border: 1px solid #ffe0e0;
+    border-left: 3px solid #990000;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: rem(125px);
+    max-width: 100%;
+    padding: 1em 1.5em;
+    display: block;
+    position: relative;
+    margin-top: 15px;
+
+    &:before {
+      content: 'Alert';
+      display: block;
+      padding-bottom: 20px;
+      font-size: 1.5rem;
+    }
+  }
+
+  // Card
+  .story-card {
+    display: inline-block;
+    width: 48%;
+    background: #660099;
+    margin-right: 1%;
+    vertical-align: top;
+    height: 170px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    &-content--align {
+      display: table-cell;
+      vertical-align: middle;
+      height: 170px;
+      text-align: center;
+
+      h2, p {
+        color: #fff;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
